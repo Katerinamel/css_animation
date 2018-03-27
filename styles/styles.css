@@ -1,0 +1,278 @@
+.app_wrapper{
+    width: 325px;
+    height: 355px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.head {
+	width: 55px;
+    height: 70px;
+    margin-top: 65px;
+    margin-left: 135px;
+    margin-bottom: 15px;
+    border:  1px solid black;
+	-moz-border-radius: 30px / 37px;
+	-webkit-border-radius: 30px / 37px;
+    border-radius: 30px / 37px;
+    
+}
+
+.body{ position: relative;
+        margin-left: 100px;
+        border-top: 120px solid black;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        height: 0;
+        width: 93px;   
+}
+
+
+.body_border{ position: absolute;
+    
+    border-top: 117px solid white;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 91px;
+    margin-top:-118px;
+    margin-left: -14px;
+}
+
+.hand_left{
+    width: 110px;
+    height: 0px;
+    border: 1px solid black;
+    margin-top: -120px;
+    transform-origin: 100%;
+    margin-left: -11px;
+}
+
+.hand_left_wrist{
+    width: 45px;
+    border: 1px solid black;
+    transform-origin: 0%;
+    margin-top: -2px;
+
+}
+.animation_hand_left_wrist{
+    animation-name: hand_spin_left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.animation_hand_left{
+    animation-name: hand_transform_left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes hand_spin_left {
+    0% { transform:rotate(-90deg);
+         }
+    25% {transform: rotate(-180deg);
+        }
+    50% {transform: rotate(-270deg);
+        }
+    75% {transform: rotate(-360deg);
+        }   
+    100% {transform: rotate(-430deg);
+        }
+}
+@keyframes hand_transform_left {
+    0% { transform:rotate(270deg);
+        }
+    25% {transform: rotate(265deg);
+        }
+    40% {transform: rotate(270deg);
+         }
+    60% {transform: rotate(270deg);
+        }
+    85% {transform: rotate(275deg);
+        }   
+    100% {transform: rotate(270deg);
+        }
+}
+
+
+.hand_right{
+    width: 110px;
+    height: 0px;
+    border: 1px solid black;
+    margin-top: -2px;
+    margin-left: 112px;
+    transform-origin: 100%;
+
+}
+
+.hand_right_wrist{
+    width: 45px;
+    border: 1px solid black;
+    transform-origin: 0%;
+    margin-top: -1px;
+}
+
+.animation_hand_right_wrist{
+    animation-name: hand_spin_right;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+   .animation_hand_right{
+    animation-name: hand_transform_right;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ 
+}
+
+@keyframes hand_spin_right {
+    0% { transform:rotate(0deg);
+         }
+    25% {transform: rotate(90deg);
+        }
+    50% {transform: rotate(180deg);
+        }
+    75% {transform: rotate(270deg);
+        }   
+    100% {transform: rotate(360deg);
+        }
+}
+
+@keyframes hand_transform_right {
+    0% { transform:rotate(270deg);
+        }
+    25% {transform: rotate(275deg);
+        }
+    40% {transform: rotate(270deg);
+         }
+    60% {transform: rotate(270deg);
+        }
+    85% {transform: rotate(265deg);
+        }   
+    100% {transform: rotate(270deg);
+        }
+}
+
+.circle {
+    width: 30px; 
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+} 
+
+.animation_left_1{
+    animation-name: ball_left_1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   }
+    
+   @keyframes ball_left_1 {
+    0%    {transform:translate(53px,95px) ; 
+            }
+    12.5% {transform: translate(85px,143px) ;
+            }
+    25% {transform: translate(128px,95px) ;
+            }   
+    37.5% {transform: translate(110px,-16px) ;
+            } 
+    50% {transform: translate(104px,-88px) ;
+             } 
+    62.5% {transform: translate(83px,-134px) ;
+            }
+    75% {transform: translate(63px,-83px) ;
+            } 
+    87.5% {transform: translate(54px,-15px) ;
+            } 
+    100% {transform:translate(53px,95px) ; 
+             }
+}
+.animation_left_2{
+    animation-name: ball_left_2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   }
+    
+@keyframes ball_left_2 {
+0% {transform: translate(104px,-128px) ;
+    } 
+12.5% {transform: translate(83px,-164px) ;
+   }
+25% {transform: translate(63px,-83px) ;
+   } 
+37.5% {transform: translate(54px,-15px) ;
+   } 
+50% {transform:translate(53px,65px) ; 
+    }
+62.5% {transform: translate(85px,113px) ;
+    }
+75% {transform: translate(128px,65px) ;
+    }   
+87.5% {transform: translate(110px,-46px) ;
+    } 
+100% {transform: translate(104px,-128px) ;
+     } 
+    }
+
+
+.animation_right_1{
+        animation-name: ball_right_1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+       }
+        
+@keyframes ball_right_1 {
+        0% {transform: translate(240px,-75px) ;
+        } 
+        12.5%    {transform:translate(247px,35px) ; 
+                }
+        25% {transform: translate(209px,83px) ;
+                }
+        37.5% {transform: translate(170px,35px) ;
+                }   
+        50% {transform: translate(186px,-76px) ;
+                } 
+        62.5% {transform: translate(193px,-148px) ;
+                 } 
+        75% {transform: translate(202px,-194px) ;
+                }
+        87.5% {transform: translate(226px,-143px) ;
+                } 
+        100% {transform: translate(236px,-75px) ;
+                } 
+        
+    }
+
+.animation_right_2{
+        animation-name: ball_right_2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+       }
+        
+@keyframes ball_right_2 {
+       
+        0% {transform: translate(186px,-106px) ;
+                } 
+        12.5% {transform: translate(193px,-178px) ;
+                 } 
+        25% {transform: translate(202px,-224px) ;
+                }
+        37.5% {transform: translate(226px,-173px) ;
+                } 
+        50% {transform: translate(240px,-105px) ;
+                } 
+        
+        62.5%    {transform:translate(247px,5px) ; 
+                }
+        75% {transform: translate(209px,53px) ;
+                }
+        87.5% {transform: translate(170px,5px) ;
+                }  
+        100%  {transform: translate(186px,-106px) ;
+                } 
+    }   
